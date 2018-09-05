@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Javascript Fundamentals Part 1</title>
+</head>
+<body>
+  <p>Check the console with F12 (in chrome)</p>
+  <script>
+    console.log("Hello World!");
+    console.log("23 + 97 =", 23 + 97);
+    console.log("The 6th triangular number is:", 1 + 2 + 3 + 4 + 5 + 6);
+    console.log("(4 + 6 + 9) / 77 = ", (4 + 6 + 9) / 77, "(expected: ~0.24675)");
+
+    // Let's create some variables
+    console.log("Let's define a = 10");
+    let a = 10;
+    console.log("The value of a is:", a);
+    console.log("9 * a =", 9 * a);
+    console.log("Let's define b = 7 * a");
+    let b = 7 * a;
+    console.log("The value of b is:", b);
+
+    const max = 57;
+    console.log("Let's define a constant max = 57");
+    let actual = max - 13;
+    console.log("Then define actual = max - 13");
+    let percentage = actual / max * 100;
+    console.log("actual is", percentage, "% of max")
+    console.log("How about a way to properly format the above statement");
+    console.log("Off to read the JS API for console.log");
+    console.log("So let's try 2 decimal places using substitution strings");
+    console.log("actual is %.2f%% of max", percentage);
+    console.log("Ok! I managed to get rid of the delimiting space but the precision formatting didn't work");
+    console.log("It appears that chrome doesn't support precision formatting");
+    console.log("That's ok! How about just using Number.toFixed()");
+    console.log("actual is %s%% of max", percentage.toFixed(2));
+    console.log("How about just rounding to an integer");
+    console.log("actual is %d%% of max", percentage);
+  </script>
+</body>
+</html>
